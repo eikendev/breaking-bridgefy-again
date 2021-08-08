@@ -1,0 +1,14 @@
+$yellow: #1269B0;
+
+$primary: $yellow;
+
+$border-radius: 2px;
+$border-radius-lg: 4px;
+$border-radius-sm: 1px;
+
+$link-color: $primary;
+$link-hover-color: scale-color($link-color, $lightness: 25%);
+$link-decoration: none;
+$link-hover-decoration: underline;
+
+$font-family-sans-serif: "Times New Roman", "Georgia", "Garamond", serif !default;

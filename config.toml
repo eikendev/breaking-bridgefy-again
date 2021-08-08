@@ -1,0 +1,56 @@
+baseURL = "https://www.eiken.dev/breaking-bridgefy-again/"
+languageCode = "en-us"
+title = "Breaking Bridgefy, again"
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+
+[social]
+	twitter = "eikendev"
+
+# Do not include any taxonomies in sitemap.
+[taxonomies]
+
+[params]
+	title = "Breaking Bridgefy, again"
+	author = "Raphael Eikenberg, Martin R. Albrecht, Kenneth G. Paterson"
+	description = "In this work, we analyse the revised security architecture of Bridgefy and report severe vulnerabilities. We show that an adversary can compromise the confidentiality of one-to-one messages by using a TOCTOU attack side-stepping Signal's guarantees. Further, we show that an adversary can impersonate other users in the broadcast channel. Finally, we show that any nodes in the network that receive a single carefully crafted message become unable to participate in further network communication."
+	keywords = "bridgefy,cryptography,toctou,libsignal,ethz"
+	images = ["./img/card.png"]
+
+[params.links]
+[[params.links.headerlink]]
+	name = "Read the Paper"
+	url = "./breaking-bridgefy-again.pdf"
+	icon = "fab fa-readme"
+    color = "primary"
+[[params.links.headerlink]]
+	name = "FAQ"
+	url = "#faq"
+	icon = "fas fa-lightbulb"
+    color = "secondary"
+[[params.links.headerlink]]
+	name = "Contact Us"
+	url = "#contact"
+	icon = "fas fa-users"
+    color = "secondary"
+[[params.links.footerlink]]
+	name = "eikendev"
+	url = "https://twitter.com/eikendev"
+	icon = "fab fa-twitter"
+    hover = "eikendev on Twitter"
+[[params.links.footerlink]]
+	name = "martinralbrecht"
+	url = "https://twitter.com/martinralbrecht"
+	icon = "fab fa-twitter"
+    hover = "martinralbrecht on Twitter"
+[[params.links.footerlink]]
+	name = "kennyog"
+	url = "https://twitter.com/kennyog"
+	icon = "fab fa-twitter"
+    hover = "kennyog on Twitter"
+
+# https://gohugo.io/templates/sitemap-template/
+[sitemap]
+	changefreq = "weekly"
+	filename = "sitemap.xml"
+	priority = 0.5

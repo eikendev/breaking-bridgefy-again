@@ -1,0 +1,8 @@
+<div class="card my-3" id="{{ .Get "id" }}">
+	<div class="card-header">
+		<strong>{{ .Get "question" | markdownify }}</strong>
+	</div>
+	<div class="card-body">
+		{{ .Inner | markdownify }}
+	</div>
+</div>

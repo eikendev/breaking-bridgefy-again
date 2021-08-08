@@ -1,0 +1,10 @@
+{{ $script_site := resources.Get "js/site.js" }}
+{{ $script_bootstrap := resources.Get "js/bootstrap.bundle.js" }}
+
+{{ $script := slice $script_site $script_bootstrap | resources.Concat "js/bundle.js" | resources.Minify | resources.Fingerprint "sha384" }}
+<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"></script>
+
+{{ $script_fontawesome := resources.Get "js/fontawesome.all.js" }}
+
+{{ $script := slice $script_fontawesome | resources.Concat "js/bundle-deferred.js" | resources.Minify | resources.Fingerprint "sha384" }}
+<script defer src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"></script>

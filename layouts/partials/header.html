@@ -1,0 +1,20 @@
+{{ $links := .Site.Params.links }}
+
+<div class="container">
+	<div class="py-lg-5">
+		<h1>{{ .Params.title }}</h1>
+		<h2>{{ .Params.subtitle }}</h2>
+		<p class="lead text-muted">{{ .Params.leadtext | markdownify }}</p>
+		<div class="mt-4">
+			{{ with $links }}
+			{{ with index . "headerlink"}}
+			{{ template "header-links-block"  . }}
+			{{ end }}
+			{{ end }}
+		</div>
+	</div>
+</div>
+
+{{ define "header-links-block" }}
+{{ range . }}<a href="{{ .url }}" class="btn btn-{{ .color }} my-2 mx-2"><i class="{{ .icon }} fa-lg me-2"></i>{{ .name }}</a>{{ end }}
+{{ end }}

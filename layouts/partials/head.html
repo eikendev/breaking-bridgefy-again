@@ -1,0 +1,30 @@
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="{{ $.Site.Params.author }}" />
+<meta name="description" content="{{ $.Site.Params.description }}">
+<meta name="keywords" content="{{ $.Site.Params.keywords }}" />
+
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/schema.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}
+
+{{ with .Site.Social.twitter -}}
+<meta name="twitter:creator" content="@{{ . }}"/>
+{{ end -}}
+
+<title>{{ $.Site.Title }}</title>
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | absURL }}" />
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | absURL }}" />
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | absURL }}" />
+<link rel="manifest" href="{{ "site.webmanifest" | absURL }}" />
+<link rel="mask-icon" href="{{ "safari-pinned-tab.svg" | absURL }}" color="#5bbad5" />
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#000000">
+
+{{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules")) }}
+{{ $style := resources.Get "css/main.scss" | toCSS $options | postCSS (dict "config" "./assets/css/postcss.config.js") | fingerprint "sha384" }}
+<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">

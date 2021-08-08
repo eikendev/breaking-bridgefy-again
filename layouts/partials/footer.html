@@ -1,0 +1,24 @@
+{{ $links := .Site.Params.links }}
+
+<div class="container">
+	<div class="row justify-content-center mb-3">
+		{{ with $links }}
+		{{ with index . "footerlink"}}
+		{{ template "footer-links-block"  . }}
+		{{ end }}
+		{{ end }}
+	</div>
+	<p class="text-center text-muted">
+		<a class="text-center text-muted" href="https://creativecommons.org/licenses/by/4.0/" title="License">
+			<small>Attribution 4.0 International (CC BY 4.0)</small>
+		</a>
+	</p>
+</div>
+
+{{ define "footer-links-block" }}
+{{ range . }}
+<a class="my-1 me-3 col-auto mr-clear-lastchild text-white" href="{{ .url }}" title="{{if .hover}}{{ .hover }}{{else}}{{ .name }}{{end}}">
+	<i class="{{ .icon }} me-2"></i>{{ .name }}
+</a>
+{{ end }}
+{{ end }}
