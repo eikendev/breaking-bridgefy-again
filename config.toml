@@ -1,4 +1,4 @@
-baseURL = "https://www.eiken.dev/breaking-bridgefy-again/"
+baseURL = "https://eikendev.github.io/breaking-bridgefy-again/"
 languageCode = "en-us"
 title = "Breaking Bridgefy, again"
 disableHugoGeneratorInject = true
