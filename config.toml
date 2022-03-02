@@ -34,15 +34,15 @@ enableRobotsTXT = true
 	icon = "fas fa-users"
     color = "secondary"
 [[params.links.footerlink]]
-	name = "eikendev"
-	url = "https://twitter.com/eikendev"
-	icon = "fab fa-twitter"
-    hover = "eikendev on Twitter"
-[[params.links.footerlink]]
 	name = "martinralbrecht"
 	url = "https://twitter.com/martinralbrecht"
 	icon = "fab fa-twitter"
     hover = "martinralbrecht on Twitter"
+[[params.links.footerlink]]
+	name = "eikendev"
+	url = "https://twitter.com/eikendev"
+	icon = "fab fa-twitter"
+    hover = "eikendev on Twitter"
 [[params.links.footerlink]]
 	name = "kennyog"
 	url = "https://twitter.com/kennyog"

@@ -47,7 +47,7 @@ The source code for our attacks will be published at a later stage [here on GitH
 
 {{< quanda question="Team" id="contact" >}}
 We are academic researchers from ETH Zurich and Royal Holloway:
-- [Raphael Eikenberg](https://www.eiken.dev/) (Applied Cryptography Group, ETH Zurich)
 - [Martin R. Albrecht](https://malb.io/) (Information Security Group, Royal Holloway, University of London)
+- [Raphael Eikenberg](https://www.eiken.dev/) (Applied Cryptography Group, ETH Zurich)
 - [Kenneth G. Paterson](https://inf.ethz.ch/people/person-detail.paterson.html) (Applied Cryptography Group, ETH Zurich)
 {{< /quanda >}}
