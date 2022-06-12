@@ -28,7 +28,7 @@ Our other findings include:
 We disclosed our first vulnerabilities to Bridgefy in May 2021.
 According to the developers, the vulnerability allowing an attacker to read encrypted messages was fixed on 14 August 2021.
 The disclosure of our attacks on the broadcast encryption followed in September 2021.
-We asked the developers to comment on the remediation progress in early February 2021, however, at the time of writing the state of the remediation remains unclear.
+We asked the developers to comment on the remediation progress in early February 2022, however, at the time of writing the state of the remediation remains unclear.
 
 We recommend that users avoid Bridgefy until its developers have committed to regular public security audits by respected third party auditors.
 {{< /quanda >}}
