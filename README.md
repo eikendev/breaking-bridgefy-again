@@ -1,6 +1,6 @@
 # Breaking Bridgefy, again
 
-This repository contains the code for our proof of concept attacks.
+This repository contains the code for our proof of concept attacks; see below for a rough overview.
 You can find out more about our attacks in our [FAQ](https://eikendev.github.io/breaking-bridgefy-again/).
 
 ## gzip/
