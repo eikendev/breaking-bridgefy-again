@@ -42,7 +42,7 @@ A video demo of the TOCTOU attack can be found [here on Twitter](https://twitter
 {{< /quanda >}}
 
 {{< quanda question="Exploit Code" >}}
-The source code for our attacks will be published at a later stage [here on GitHub](https://github.com/eikendev/breaking-bridgefy-again).
+The source code for our attacks is available [here on GitHub](https://github.com/eikendev/breaking-bridgefy-again).
 {{< /quanda >}}
 
 {{< quanda question="Team" id="contact" >}}
