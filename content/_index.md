@@ -34,7 +34,7 @@ We recommend that users avoid Bridgefy until its developers have committed to re
 {{< /quanda >}}
 
 {{< quanda question="Paper" >}}
-You can find more details in [our research paper](./breaking-bridgefy-again.pdf).
+You can find more details in [our research paper](./breaking-bridgefy-again.pdf) which we presented at [the 31st USENIX Security Symposium](https://www.usenix.org/conference/usenixsecurity22/presentation/albrecht).
 {{< /quanda >}}
 
 {{< quanda question="Demo" >}}
