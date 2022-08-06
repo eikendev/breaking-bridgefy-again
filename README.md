@@ -22,6 +22,8 @@ To run the TOCTOU demo, install Python3 and [Frida](https://frida.re/), and exec
 ```bash
 ./userid-toctou.py <adb_phone_id> 'Bridgefy'
 ```
+
+A video demo of this attack is available [here on Twitter](https://twitter.com/eikendev/status/1427542406262575105).
 Be aware that the attack no longer works on more recent versions of Bridgefy.
 
 ## match/
